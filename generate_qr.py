@@ -35,9 +35,7 @@ def extract_name_from_filename(filename):
     """
     Extract FIRSTNAME_LASTNAME from filename and format as FIRSTNAME LASTNAME
     Handles formats like:
-    - Image MATTHEW_TIAN - Big Backs Laurier.HEIC -> MATTHEW TIAN
-    - Image TINA_ZHENG - tina zheng.jpg -> TINA ZHENG
-    - MATTHEW_TIAN.jpg -> MATTHEW TIAN
+    - FIRSTNAME_LASTNAME.jpg
     """
     # Remove file extension
     name_without_ext = os.path.splitext(filename)[0]
